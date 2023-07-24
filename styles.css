@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Default styles for img and section */
+.section {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust section height for mobile devices */
+  .section {
+    height: auto;
+  }
+
+  /* Adjust img width for mobile devices */
+  .section img {
+    max-width: 100%;
+  }
+}
+
+.h1-container{
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  color: #FFFFFF80;
+  
+}
+
+.p1-container{
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  color: #FFFFFF80;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Default styles for img and section */
+.section {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Grid for Images with Zooming */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  
+}
+
+
+/* Add these styles to the existing CSS */
+
+.instagram-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+  gap: 20px;
+}
+
+.instagram-media {
+  background: #FFF;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  max-width: 540px;
+  margin: 1px;
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.instagram-media img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .instagram-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+}
+
+/* Add more media queries as needed for smaller screens */
+@media (max-width: 576px) {
+  .instagram-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+}
+
+
+
+/* Adjust the grid for media queries */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card {
+    padding: 5px;
+  }
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust section height for mobile devices */
+  .section {
+    height: auto;
+  }
+
+  /* Adjust img width for mobile devices */
+  .section img {
+    max-width: 100%;
+  }
+
+  /* Adjust h1 font size for mobile devices */
+  .h1-container h1 {
+    font-size: 24px;
+  }
+
+  .p1-container {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .h1-container p {
+    font-size: 24px;
+  }
+}
+
+
+/* For larger devices, default font size for h1 */
+.h1-container h1 {
+  font-size: 36px;
+}
+
+.p1-container {
+  font-size: 18px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.footer .container .image-grid a{
+  text-decoration: none;
+  color: inherit;
+}
