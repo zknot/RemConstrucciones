@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+/*Navbar*/
+.navbar{
+  background-color: lightslategray; 
+}
 
 /* Default styles for img and section */
 .section {
