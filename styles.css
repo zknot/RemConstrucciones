@@ -729,3 +729,7 @@ body {
 #carouselExample{
   background-color: #343a40 !important; 
 }
+
+.carousel-item img {
+  height: 300px; /* Set the desired height for your images */
+}
