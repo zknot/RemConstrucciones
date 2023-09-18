@@ -22,6 +22,144 @@
   height: auto;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel{
+  margin-bottom: 10px;
+}
+
+.carousel ol{
+  padding-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust section height for mobile devices */
@@ -175,7 +313,7 @@
 
   /* Adjust h1 font size for mobile devices */
   .h1-container h1 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .p1-container {
@@ -214,4 +352,380 @@
 .footer .container .image-grid a{
   text-decoration: none;
   color: inherit;
+}
+
+/* Adjust the grid for media queries */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card {
+    padding: 5px;
+  }
+}
+
+/* Add these styles for the carousel */
+
+.carousel {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 90%;
+  }
+}
+
+
+/* Styles for the carousel container */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.carousel-container .carousel {
+  max-width: 100%;
+}
+
+.carousel-container .carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container .carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+  width: 5%;
+}
+
+.carousel-container .carousel-control-prev-icon,
+.carousel-container .carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  /* Adjust carousel container for smaller devices */
+  .carousel-container {
+    max-width: 90%;
+  }
+}
+
+/* Styles for the carousel container */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles for the carousel and its items */
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsive carousel and images */
+@media (max-width: 768px) {
+  /* Adjust carousel size for mobile devices */
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  /* Adjust carousel indicators for mobile devices */
+  .carousel-indicators {
+    bottom: -15px;
+  }
+
+  /* Adjust carousel control buttons for mobile devices */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  /* Adjust font size for carousel control buttons for mobile devices */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 1rem;
+  }
+
+  /* Adjust img width for mobile devices */
+  .carousel img {
+    max-width: 100%;
+  }
+
+  /* Adjust img height for mobile devices */
+  .carousel-inner .carousel-item img {
+    height: auto;
+  }
+}
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust section height for mobile devices */
+  .section {
+    height: auto;
+  }
+
+  /* Adjust img width for mobile devices */
+  .section img {
+    max-width: 100%;
+  }
+
+  /* Adjust h1 font size for mobile devices */
+  .h1-container h1 {
+    font-size: 18px;
+  }
+
+  .p1-container {
+    font-size: 12px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card {
+    padding: 5px;
+  }
+
+  /* Adjust carousel size for mobile devices */
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  /* Adjust carousel item size for mobile devices */
+  .carousel-inner .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For larger devices, default font size for h1 */
+.h1-container h1 {
+  font-size: 36px;
+}
+
+.p1-container {
+  font-size: 18px;
+}
+
+/* Styles for the carousel */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: lightslategray;
+}
+
+/* Default styles for img and section */
+.section {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Grid for Images with Zooming */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* Add these styles for the carousel */
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Media queries for responsive carousel and images */
+@media (max-width: 768px) {
+  /* Adjust carousel size for mobile devices */
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  /* Adjust carousel indicators for mobile devices */
+  .carousel-indicators {
+    bottom: -15px;
+  }
+
+  /* Adjust carousel control buttons for mobile devices */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  /* Adjust font size for carousel control buttons for mobile devices */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 1rem;
+  }
+
+  /* Adjust img width for mobile devices */
+  .carousel img {
+    max-width: 100%;
+  }
+
+  /* Adjust img height for mobile devices */
+  .carousel-inner .carousel-item img {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust section height for mobile devices */
+  .section {
+    height: auto;
+  }
+
+  /* Adjust img width for mobile devices */
+  .section img {
+    max-width: 100%;
+  }
+
+  /* Adjust h1 font size for mobile devices */
+  .h1-container h1 {
+    font-size: 18px;
+  }
+
+  .p1-container {
+    font-size: 12px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card {
+    padding: 5px;
+  }
+}
+
+
+#carouselExample{
+  background-color: #343a40 !important; 
 }
