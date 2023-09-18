@@ -725,6 +725,10 @@ body {
   }
 }
 
+.h1-container {
+  padding-top: 1rem;
+}
+
 
 #carouselExample{
   background-color: #343a40 !important; 
